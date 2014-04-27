@@ -12,7 +12,7 @@ https://github.com/petecheslock/sensu-docker/tree/071bb0eefc7c5a7ed22d1f45479612
 https://index.docker.io/u/petecheslock/sensu/
 build id: bwaw6by4ejux5ggen2txyxb
 
-## docker build
+## docker pull
 docker pull petecheslock/sensu
 
 ## docker build
