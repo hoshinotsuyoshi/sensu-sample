@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "load_metrics": {
+      "type": "metric",
+      "command": "/opt/sensu/embedded/bin/ruby /etc/sensu/plugins/load-metrics.rb",
+      "subscribers": [ "webservers" ],
+      "interval": 10
+    }
+  }
+}

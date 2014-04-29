@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "sample_check": {
+      "handlers": ["default","mailer"],
+      "command": "/opt/sensu/embedded/bin/ruby /etc/sensu/plugins/check-sample.rb",
+      "interval": 60,
+      "subscribers": [ "webservers" ]
+    }
+  }
+}
