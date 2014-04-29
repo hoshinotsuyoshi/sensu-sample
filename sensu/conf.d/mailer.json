@@ -1,11 +1,11 @@
 {
   "mailer": {
-    "admin_gui": "http://www33138u.sakura.ne.jp:8080",
-    "mail_from": "sensu@example.com",
-    "mail_to": "guitarpopnot330+monitor@gmail.com",
+    "admin_gui": "SENSU_ADMIN_GUI",
+    "mail_from": "SENSU_MAIL_FROM",
+    "mail_to": "SENSU_MAIL_TO",
     "smtp_address": "smtp.sendgrid.net",
-    "smtp_username": "app19175509@heroku.com",
-    "smtp_password": "odnozdqt",
+    "smtp_username": "SENDGRID_USERNAME",
+    "smtp_password": "SENDGRID_PASSWORD",
     "smtp_port": "587",
     "smtp_domain": "sendgrid.net"
   }
