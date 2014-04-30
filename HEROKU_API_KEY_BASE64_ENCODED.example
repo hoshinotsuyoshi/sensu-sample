@@ -1,0 +1,3 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx=
+
+# (echo -n ":" ; heroku auth:token) | base64
