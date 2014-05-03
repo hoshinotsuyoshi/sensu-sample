@@ -24,10 +24,10 @@
         "default": {
           "type": "pipe",
           "command": "true"
-	},
-	"mailer": {
+        },
+        "mailer": {
           "type": "pipe",
-          "command": "/opt/sensu/embedded/bin/ruby /etc/sensu/handlers/mailer.rb"
-	}
+          "command": "ruby /etc/sensu/handlers/mailer.rb"
+        }
       }
     }
