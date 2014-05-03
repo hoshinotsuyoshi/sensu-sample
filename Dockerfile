@@ -7,4 +7,8 @@ RUN chown -R sensu:sensu /etc/sensu
 RUN chmod +x -R /etc/sensu
 RUN rm -rf /usr/local/bin
 RUN ln -s /opt/sensu/embedded/bin /usr/local/bin
+ADD . /tmp/wd-sensu-sample
+RUN wget http://curl.haxx.se/ca/cacert.pem
+RUN mv cacert.pem /opt/sensu/embedded/ssl/cert.pem
+RUN cd /tmp/wd-sensu-sample && ruby heroku_variables_load.rb
 CMD /tmp/start.sh
