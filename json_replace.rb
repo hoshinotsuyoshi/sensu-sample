@@ -1,3 +1,5 @@
+require './heroku_variables_load'
+
 Dir.glob(['sensu/conf.d/*.json', 'sensu/*.json']).each do |path|
   string = File.read(path)
   ENV.each do |k,v|
