@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "http_check_sensu_dashboard": {
+      "handlers": ["mailer"],
+      "command": "ruby /etc/sensu/plugins/check-http.rb --url http://www33138u.sakura.ne.jp:8080 --response-code 401 ",
+      "interval": 60,
+      "subscribers": ["test"],
+      "standalone": true
+    }
+  }
+}

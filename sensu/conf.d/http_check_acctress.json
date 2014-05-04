@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "http_check_actress": {
+      "handlers": ["mailer"],
+      "command": "ruby /etc/sensu/plugins/check-http.rb --url http://xn--o1q8h80u333a.xn--u9jw89o.com --response-code 200 ",
+      "interval": 60,
+      "subscribers": ["test"],
+      "standalone": true
+    }
+  }
+}
