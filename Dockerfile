@@ -19,9 +19,6 @@ RUN mv cacert.pem /opt/sensu/embedded/ssl/cert.pem
 # install gem 'mail' (to use plugins/mailer.rb)
 RUN gem install mail
 
-# below script should be on CMD-instruction?
 ADD . /tmp/wd-sensu-sample
-  # json-replasing-with-heroku's env-key
-RUN cd /tmp/wd-sensu-sample && ruby json_replace.rb
 
-CMD /tmp/start.sh
+CMD cd /tmp/wd-sensu-sample && ruby json_replace.rb && /tmp/start.sh
