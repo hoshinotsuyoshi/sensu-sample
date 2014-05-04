@@ -1,0 +1,1 @@
+../sensu-community-plugins/plugins/http/check-http.rb
