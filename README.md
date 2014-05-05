@@ -14,16 +14,14 @@ git submodule update
 ## Dependency
 
 
-https://github.com/petecheslock/sensu-docker
+https://github.com/sensu/sensu-community-plugins
 
-https://github.com/petecheslock/sensu-docker/tree/071bb0eefc7c5a7ed22d1f454796120c64775dad
+* https://index.docker.io/u/hoshinotsuyoshi/sensu-base/
 
-https://index.docker.io/u/petecheslock/sensu/
-build id: bwaw6by4ejux5ggen2txyxb
+https://github.com/hoshinotsuyoshi/sensu-base-docker
+
 
 ## Deployment
-### docker pull
-docker pull petecheslock/sensu
 
 ### docker build
 docker build -t hogehoge .
@@ -34,4 +32,4 @@ docker run -d -p 15672:15672 -p 8080:8080 -p 4567:4567 hogehoge
 ## ssh,etc
 
 see:
-https://github.com/petecheslock/sensu-docker/README.md
+https://github.com/petecheslock/sensu-docker/blob/master/README.md
