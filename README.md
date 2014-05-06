@@ -1,7 +1,7 @@
-sensu-sample
+sensu-server
 ============
 
-sample docker app
+my sensu-server docker app
 
 ## Development
 ### At First
