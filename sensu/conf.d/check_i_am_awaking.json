@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "i_am_awaking_check": {
+      "handlers": ["default","mailer"],
+      "command": "ruby /etc/sensu/plugins/check-i-am-awaking.rb",
+      "interval": 86400,
+      "subscribers": [ "sensu-server" ]
+    }
+  }
+}
