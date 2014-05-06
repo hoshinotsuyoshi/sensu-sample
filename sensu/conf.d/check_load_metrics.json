@@ -3,7 +3,7 @@
     "load_metrics": {
       "type": "metric",
       "command": "ruby /etc/sensu/plugins/load-metrics.rb",
-      "subscribers": [ "webservers" ],
+      "subscribers": [ "sensu-server", "webservers" ],
       "interval": 10
     }
   }
