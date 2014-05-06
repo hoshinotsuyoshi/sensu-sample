@@ -1,1 +1,0 @@
-../sensu-community-plugins/plugins/processes/check-procs.rb
