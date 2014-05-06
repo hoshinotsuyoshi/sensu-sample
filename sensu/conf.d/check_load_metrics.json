@@ -2,7 +2,7 @@
   "checks": {
     "load_metrics": {
       "type": "metric",
-      "command": "ruby /etc/sensu/plugins/load-metrics.rb",
+      "command": "/opt/sensu/embedded/bin/ruby /etc/sensu/plugins/load-metrics.rb",
       "subscribers": [ "sensu-server", "webservers" ],
       "interval": 10
     }
