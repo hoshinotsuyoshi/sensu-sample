@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
 
-exit 0
+exit 1
