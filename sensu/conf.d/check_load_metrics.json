@@ -4,7 +4,8 @@
       "type": "metric",
       "command": "/opt/sensu/embedded/bin/ruby /etc/sensu/plugins/load-metrics.rb",
       "subscribers": [ "sensu-server", "webservers" ],
-      "interval": 10
+      "interval": 10,
+      "handlers": ["graphite"]
     }
   }
 }
