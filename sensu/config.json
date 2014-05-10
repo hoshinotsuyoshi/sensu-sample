@@ -28,6 +28,14 @@
         "mailer": {
           "type": "pipe",
           "command": "ruby /etc/sensu/handlers/mailer.rb"
+        },
+        "graphite": {
+          "type": "tcp",
+          "socket": {
+            "host": "$GRAPHITE_IP_ADDRESS",
+            "port": 2003
+          },
+          "mutator": "only_check_output"
         }
       }
     }
